@@ -6,6 +6,5 @@ target 'RibsTest' do
   use_frameworks!
 
   # Pods for RibsTest
-  pod 'RIBs'
   pod 'Firebase/Analytics'
 end
