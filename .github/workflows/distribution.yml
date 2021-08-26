@@ -30,10 +30,7 @@ jobs:
         run: curl -sL https://firebase.tools | bash
 
       - name: Upload ipa to Firebase App Distribution
-        run: firebase appdistribution:distribute $PWD/result/RibsTest.ipa \
-          --app ${{secrets.FIREBASE_APP_ID}} \
-          --token ${{secrets.FIREBASE_TOKEN}}
-          --release-notes "TEST CI/CD BY GITHUB ACTION"
+        run: firebase appdistribution:distribute $PWD/result/RibsTest.ipa --app ${{secrets.FIREBASE_APP_ID}} --token ${{secrets.FIREBASE_TOKEN}} --release-notes "TEST CI/CD BY GITHUB ACTION"
           
       - name: Xcode list
         run: ls -n /Applications/ | grep Xcode*
