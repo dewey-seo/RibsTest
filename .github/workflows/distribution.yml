@@ -45,7 +45,7 @@ jobs:
           certificate-password:: ${{ secrets.P12_PASSWORD }}
           mobileprovision-base64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
           code-signing-identity: "H2FY87959U"
-          team-id: "122504457"
+          team-id: "D4Z53MQAF2"
           
 #       - name: Install the Apple certificate and provisioning profile
 #         env:
