@@ -63,7 +63,9 @@ jobs:
           # apply provisioning profile
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles
-          
+      - name: Pod install
+        run: pod install
+        
       - name: Clean workspace with scheme
         run: xcodebuild clean -workspace RibsTest.xcworkspace -scheme RibsTest
 
