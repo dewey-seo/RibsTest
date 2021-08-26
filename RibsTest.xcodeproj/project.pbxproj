@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16F70252C852695A60C2A5FB /* Pods_RibsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002B555EA4B8E02239EFAC61 /* Pods_RibsTest.framework */; };
+		58ACF2E726D72E4300837597 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58ACF2E626D72E4300837597 /* GoogleService-Info.plist */; };
 		58D2475926D655D700703822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D2475826D655D700703822 /* AppDelegate.swift */; };
 		58D2475B26D655D700703822 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D2475A26D655D700703822 /* SceneDelegate.swift */; };
 		58D2475D26D655D700703822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D2475C26D655D700703822 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 		002B555EA4B8E02239EFAC61 /* Pods_RibsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RibsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA9FC530E2771572CD069DD /* Pods-RibsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RibsTest.release.xcconfig"; path = "Target Support Files/Pods-RibsTest/Pods-RibsTest.release.xcconfig"; sourceTree = "<group>"; };
 		4392D03C49D961F60AA7657E /* Pods-RibsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RibsTest.debug.xcconfig"; path = "Target Support Files/Pods-RibsTest/Pods-RibsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		58ACF2E626D72E4300837597 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58D2475526D655D700703822 /* RibsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RibsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D2475826D655D700703822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D2475A26D655D700703822 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				58D2476126D655D800703822 /* Assets.xcassets */,
 				58D2476326D655D800703822 /* LaunchScreen.storyboard */,
 				58D2476626D655D800703822 /* Info.plist */,
+				58ACF2E626D72E4300837597 /* GoogleService-Info.plist */,
 			);
 			path = RibsTest;
 			sourceTree = "<group>";
@@ -102,6 +105,7 @@
 				58D2475126D655D700703822 /* Sources */,
 				58D2475226D655D700703822 /* Frameworks */,
 				58D2475326D655D700703822 /* Resources */,
+				05C98C251CAF4B2A6ED317DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58D2476526D655D800703822 /* LaunchScreen.storyboard in Resources */,
+				58ACF2E726D72E4300837597 /* GoogleService-Info.plist in Resources */,
 				58D2476226D655D800703822 /* Assets.xcassets in Resources */,
 				58D2476026D655D700703822 /* Main.storyboard in Resources */,
 			);
@@ -158,6 +163,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05C98C251CAF4B2A6ED317DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RibsTest/Pods-RibsTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RibsTest/Pods-RibsTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RibsTest/Pods-RibsTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		87A1022B4E305EE6EC23FD69 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
