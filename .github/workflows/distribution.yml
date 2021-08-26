@@ -78,26 +78,11 @@ jobs:
       - name: ls for checking xcarhive file
         run: ls result
         
-      - name: Create an ipa
+      - name: Create ipa file
         run: xcodebuild -exportArchive -archivePath $PWD/result/RibsTest.xcarchive -exportPath $PWD/result -exportOptionsPlist $PWD/RibsTest/ExportOptions.plist
 
-
       - name: Check files
-        run: ls -R
-
-      - name: Save ipa
-        uses: actions/upload-artifact@v2
-        with:
-          name: ios-artifact
-          path: ActionSample.ipa
-
-      - name: Get ipa
-        uses: actions/download-artifact@v2
-        with:
-          name: ios-artifact
-
-      - name: Check files
-        run: ls -R
+        run: ls result
        
       - name: Upload ipa to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1
