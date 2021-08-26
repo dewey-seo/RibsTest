@@ -67,12 +67,18 @@ jobs:
       - name: Clean workspace with scheme
         run: xcodebuild clean -workspace RibsTest.xcworkspace -scheme RibsTest
 
-      - name: Build
-        run: |
-          pod install
-          xcodebuild build -workspace ActionSample.xcworkspace -configuration Automation -scheme ActionSample "OTHER_CODE_SIGN_FLAGS=--keychain '$KEYCHAIN'"
-          xcodebuild archive -workspace ActionSample.xcworkspace -scheme ActionSample -archivePath sample.xcarchive
-          xcodebuild -exportArchive -archivePath sample.xcarchive -exportPath . -exportOptionsPlist ./ExportOptions.plist
+      - name: Build workspace with scheme
+        run: xcodebuild build -workspace RibsTest.xcworkspace -scheme RibsTest
+        
+      - name: Archive workspace
+        run: xcodebuild archive -workspace RibsTest.xcworkspace -scheme RibsTest -archivePath $PWD/result/RibsTest.xcarchive
+        
+      - name: ls for checking xcarhive file
+        run: ls result
+        
+      - name: Create an ipa
+        run: xcodebuild -exportArchive -archivePath $PWD/result/RibsTest.xcarchive -exportPath $PWD/result -exportOptionsPlist $PWD/RibsTest/ExportOptions.plist
+
 
       - name: Check files
         run: ls -R
