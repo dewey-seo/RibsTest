@@ -26,6 +26,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         
+      - name: Upload ipa to Firebase App Distribution
+        run: firebase appdistribution:distribute $PWD/result/RibsTest.ipa
+        
       - name: Xcode list
         run: ls -n /Applications/ | grep Xcode*
         
@@ -85,18 +88,24 @@ jobs:
       - name: Check files
         run: ls result
         
+      - name: Upload ipa to Firebase App Distribution
+        run: firebase appdistribution:distribute $PWD/result/RibsTest.ipa \
+          --app ${{secrets.FIREBASE_APP_ID}} \
+          --token ${{secrets.FIREBASE_TOKEN}}
+          --release-notes "TEST CI/CD BY GITHUB ACTION"
+          
 #       - name: Save ipa
 #         uses: actions/upload-artifact@v2
 #         with:
 #           name: ios-artifact
 #           path: $PWD/result/RibsTest.ipa
           
-      - name: Upload ipa to Firebase App Distribution
-        uses: wzieba/Firebase-Distribution-Github-Action@v1
-        with:
-          appId: ${{secrets.FIREBASE_APP_ID}}
-          token: ${{secrets.FIREBASE_TOKEN}}
-          file: $PWD/result/RibsTest.ipa
+#       - name: Upload ipa to Firebase App Distribution
+#         uses: wzieba/Firebase-Distribution-Github-Action@v1
+#         with:
+#           appId: ${{secrets.FIREBASE_APP_ID}}
+#           token: ${{secrets.FIREBASE_TOKEN}}
+#           file: $PWD/result/RibsTest.ipa
       
 #   upload:
 #     runs-on: ubuntu-latest
