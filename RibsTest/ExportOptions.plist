@@ -6,5 +6,14 @@
 	<string>D4Z53MQAF2</string>
 	<key>method</key>
 	<string>development</string>
+	<key>compileBitcode</key>
+	<true/>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.hibiscus.RibsTest</key>
+		<string>RibsTestProvisioning</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>Apple Development: Dewey Seo (H2FY87959U)</string>
 </dict>
 </plist>

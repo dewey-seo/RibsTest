@@ -391,7 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development: Dewey Seo (H2FY87959U)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = D4Z53MQAF2;
 				INFOPLIST_FILE = RibsTest/Info.plist;
@@ -413,7 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development: Dewey Seo (H2FY87959U)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = D4Z53MQAF2;
 				INFOPLIST_FILE = RibsTest/Info.plist;
