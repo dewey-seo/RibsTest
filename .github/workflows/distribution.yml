@@ -26,6 +26,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         
+      - name: install firebase
+        run: curl -sL https://firebase.tools | bash
+        
       - name: Upload ipa to Firebase App Distribution
         run: firebase appdistribution:distribute $PWD/result/RibsTest.ipa
         
