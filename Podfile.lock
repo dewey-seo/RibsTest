@@ -80,13 +80,9 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (2.0.0)
-  - RIBs (0.9.1):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.5.0)
 
 DEPENDENCIES:
   - Firebase/Analytics
-  - RIBs
 
 SPEC REPOS:
   trunk:
@@ -100,8 +96,6 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
     - PromisesObjC
-    - RIBs
-    - RxSwift
 
 SPEC CHECKSUMS:
   Firebase: 21ac9f28b09a8bdfc005f34c984fca84e7e8786d
@@ -114,9 +108,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: 3df19e3c24f7bbc291d8b5809aa6b0d41e642437
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
-  RIBs: 879184fbca567425c488d6b3d14a9c5abfbf9d47
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
 
-PODFILE CHECKSUM: cda8ab3cffaae5455e12a61db0504538de030456
+PODFILE CHECKSUM: 156f8fcf7efe4bcaa365246a829729d398a82cdf
 
 COCOAPODS: 1.10.2
