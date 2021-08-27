@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>216215818522-9cvubn9v8j5m0t4gk1jqegriscrc0akf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.216215818522-9cvubn9v8j5m0t4gk1jqegriscrc0akf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBQPE24e43Ijnv5fFn_9cGVl9KzhaS_f7Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>216215818522</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hibiscus.RibsTest</string>
+	<key>PROJECT_ID</key>
+	<string>ribstest-25dda</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ribstest-25dda.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:216215818522:ios:3085c55f39273e893f9ca3</string>
+</dict>
+</plist>

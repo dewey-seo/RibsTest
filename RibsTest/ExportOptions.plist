@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>teamID</key>
+	<string>D4Z53MQAF2</string>
+	<key>method</key>
+	<string>development</string>
+	<key>compileBitcode</key>
+	<true/>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.hibiscus.RibsTest</key>
+		<string>RibsTestProvisioning</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>Apple Development: Dewey Seo (H2FY87959U)</string>
+</dict>
+</plist>

@@ -6,5 +6,7 @@ target 'RibsTest' do
   use_frameworks!
 
   # Pods for RibsTest
-
+  pod 'RIBs', :path => 'RIBs/'
+  pod 'ModernRIBs'
+  pod 'Firebase/Analytics'
 end
