@@ -12,7 +12,7 @@ target 'RibsTest' do
   # Pods for RibsTest
   pod 'RIBs', :path => 'RIBs/'
   pod 'ModernRIBs'
-  pod 'Firebase/Analytics
+  pod 'Firebase/Analytics'
 
   pod 'MPLocalization', '0.0.4'
   pod 'ScrollablePager'
