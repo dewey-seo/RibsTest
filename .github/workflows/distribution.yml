@@ -32,8 +32,8 @@ jobs:
       - name: Xcode list
         run: ls -n /Applications/ | grep Xcode*
         
-#       - name: Select Xcode
-#         run: sudo xcode-select -switch /Applications/Xcode_11.4.1.app
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_12.5.1.app
       
       - name: Xcode version
         run: /usr/bin/xcodebuild -version
