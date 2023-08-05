@@ -43,7 +43,7 @@ jobs:
     - name: Inputs
       run: echo "Version change:${{ inputs.version }}\nRelease note:${{ inputs.note }}\nIs Feature build:${{ inputs.feature-build }}"
 
-    - name: Build
+    # - name: Build
       # run: echo "release_dev from_ci:true is_feature:${{ inputs.feature-build }} release_notes:${{ inputs.note }} version_change_type:${{ inputs.version }}"
       
     
