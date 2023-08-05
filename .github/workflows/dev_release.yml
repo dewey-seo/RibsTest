@@ -20,7 +20,7 @@ on:
         type: string
         description: 'Release note'
         required: true
-      feature:
+      is-feature:
         type: boolean
         description: For feature test
 
@@ -41,9 +41,12 @@ jobs:
     #   run: /usr/bin/xcodebuild -version
 
     - name: Inputs
-      run: echo "Version change:${{ inputs.version }}\nRelease note:${{ inputs.note }}\nIs Feature build:${{ inputs.feature-build }}"
+      run: |
+      echo "Version change:${{ inputs.version }}"
+      echo "Release note:${{ inputs.note }}"
+      echo "Is Feature build:${{ inputs.is-feature }}"
 
     - name: Build
-      run: echo "release_dev from_ci:true is_feature:${{ inputs.feature-build }} release_notes:${{ inputs.note }} version_change_type:${{ inputs.version }}"
+      run: echo "release_dev from_ci:true is_feature:${{ inputs.is-feature }} release_notes:${{ inputs.note }} version_change_type:${{ inputs.version }}"
       
     
