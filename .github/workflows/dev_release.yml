@@ -45,9 +45,9 @@ jobs:
         GREEN='\033[0;32m'
         RESET='\033[0m'
         
-        echo "Version change: ${GREEN}${{ inputs.version }}${RESET}"
-        echo "Release note: ${GREEN}${{ inputs.note }}${RESET}"
-        echo "Is Feature build: ${GREEN}${{ inputs.is-feature }}${RESET}"
+        echo -e "Version change: ${GREEN}${{ inputs.version }}${RESET}"
+        echo -e "Release note: ${GREEN}${{ inputs.note }}${RESET}"
+        echo -e "Is Feature build: ${GREEN}${{ inputs.is-feature }}${RESET}"
       
     - name: Build
       run: echo "release_dev from_ci:true is_feature:${{ inputs.is-feature }} release_notes:${{ inputs.note }} version_change_type:${{ inputs.version }}"
